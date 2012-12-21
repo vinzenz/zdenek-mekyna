@@ -21,14 +21,13 @@
               background-color: #fff;
               width: 1024px;
               height: 100%;
-              background-image: url(assets/img/header.png);
+              background-image: url(assets/img/header.jpg);
               background-repeat: no-repeat;
               background-position: center top;
       }
       .header {
-              width: 100%;
-              height: 284px;
-              padding: 10px;
+        width: 100%;
+        height: 284px;
       }
       .header h1 {
         text-align: center;
@@ -36,7 +35,32 @@
         background-color: #8FBCDB;
         border: 1px solid #153450;
         margin-right: 20px;
-      }
+     }
+
+     .container {
+        width: 1024px;
+     }
+
+     .nav-tabs {
+        background-color: #8FBCDB;
+        margin-bottom: 0;
+     }
+     .nav-header {
+             color: #294052;
+             font-size: 1.1em;
+     }
+     .tabbable {
+        background-color: #fff;
+        width: 1024px;
+     }
+     .tab-pane {
+        display: block;
+        padding-right: 3em;
+     }
+     .nav li a {
+        color: #294052;
+        font-weight: bolder;
+     }
     </style>
     <link href="assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 
@@ -49,43 +73,59 @@
 
   <body>
 	 <header class="header">
-	   <h1>Zdenek M&#283;kyna</h1>
+     <!--	   <h1>Zdenek M&#283;kyna</h1> -->
 	 </header>
 	 <div class="container">
 	   <div class="tabbable tabs-left">
 	     <ul class="nav nav-tabs" style="height: 500px">
 	       <li class="nav-header">Navigace</li>
-	       <li class="active"><a href="#main">O firmě</a></li>
-	       <li><a href="#services">Slu&#382;by</a></li>
-	       <li><a href="#gallery">Galerie</a></li>
-	       <li><a href="#contact">Kontakt</a></li>
+	       <li class="active"><a href="#ofirme">O firmě</a></li>
+	       <li><a href="#portfolio">Portfolio slu&#382;eb</a></li>
+	       <li><a href="#partneri">Partneři</a></li>
+	       <li><a href="#reference">Reference</a></li>
+	       <li><a href="#fotogalerie">Fotogalerie</a></li>
+	       <li><a href="#kontakt">Kontakt</a></li>
 	     </ul>
 	     <div class='tab-content'>
-	       <div class='tab-pane active' id='main'>
-                   <h2>O firmě</h2>
-              <div>
+	       <div class='tab-pane active' id='ofirme'>
+             <h2>O firmě</h2>
+               <div class="text-wrapper">
                  <p>Stavební společnost provozuji pod vlastním jménem Zdenek Měkyna, Stavební práce. Podnikatelskou činnost jsem zahájil v roce 1992. Po dobu více jak dvaceti let úspěšné praxe jsem realizoval desítky rekonstrukcí, stavebních úprav, ale také výstavbu zcela nových objektů.</p>
                  <p>V řízení stavebních projektů je pro mne prioritou komunikace se zákazníkem. Kvalita poskytovaných služeb a přímé jednání je mou devizou, která je stvrzena mnoha spokojenými zákazníky.</p>
                  <p>V průběhu několik let jsem si také vybudoval síť spolehlivých partnerů, kteří zajišťují související stavební služby. Proto mohu nabídnout kompletní portfolio stavebních služeb, kterými jsou například tesařské práce, instalatérské a zámečnické služby a ostatní související činnosti.</p>
-              </div>
+             </div>
 	       </div>
-	       <div class='tab-pane' id='services'>
-	         <h2>Services</h2>
+	       <div class='tab-pane' id='portfolio'>
+	         <h2>Portfolio slu&#382;eb</h2>
 	       </div>
-	       <div class='tab-pane' id='gallery'>
-	         <h2>Gallerie</h2>
+	       <div class='tab-pane' id='partneri'>
+	         <h2>Partneři</h2>
 	       </div>
-	       <div class='tab-pane' id='contact'>
-	         <h2>Contact</h2>
+	       <div class='tab-pane' id='reference'>
+	         <h2>Reference</h2>
+	       </div>
+	       <div class='tab-pane' id='fotogalerie'>
+	         <h2>Fotogalerie</h2>
+	       </div>
+	       <div class='tab-pane' id='kontakt'>
+	         <h2>Fakturační a kontaktní údaje</h2>
 	         <dl class='contact'>
-	           <dt>I&#268;O</dt>
-	             <dd> -- ICO here -- </dd>
+	           <dt>Jmeno</dt>
+	             <dd>Zdenek M&#283;kyna</dd>
 	           <dt>Adresa</dt>
-	             <dd>Janisov/Vsetin</dd>
-	           <dt>Email</dt>
-	             <dd>info@zdenek-mekyna.cz</dd>
+               <dd>Rokytnice 250<br/>
+               755 01 Vsetin<br/>
+               </dd>
 	           <dt>Mobil</dt>
 	             <dd>+420 773 337 773</dd>
+	           <dt>I&#268;O</dt>
+	             <dd> -- ICO here -- </dd>
+	           <dt>DI&#268;</dt>
+	             <dd> -- ICO here -- </dd>
+	           <dt>Bankovní spojení</dt>
+	             <dd>info@zdenek-mekyna.cz</dd>
+	           <dt>Email</dt>
+	             <dd>info@zdenek-mekyna.cz</dd>
 	         </dl>
 	       </div>
 	     </div>
