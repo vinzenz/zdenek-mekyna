@@ -2,7 +2,7 @@
 <html lang="cs">
   <head>
     <meta charset="utf-8">
-    <title>Stavba M&#283;kyna</title>
+    <title>Stavebni Prace M&#283;kyna</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Vinzenz Feenstra <evilissimo@gmail.com>" >
@@ -11,46 +11,69 @@
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <style>
       * {
-        color: #294052;
+        color: #333;
       }
       html {
               background-color: #294052;
+              background-color: #444;
       }
       body {
+              margin: 0px;
+              padding: 0px;
               margin: 0 auto;
               background-color: #fff;
               width: 1024px;
               height: 100%;
-              background-image: url(assets/img/header.jpg);
-              background-repeat: no-repeat;
-              background-position: center top;
       }
       .header {
+        background-image: url(assets/img/header.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
         width: 100%;
         height: 284px;
       }
-      .header h1 {
+     /* .header h1 {
         text-align: center;
         display: block;
         background-color: #8FBCDB;
         border: 1px solid #153450;
         margin-right: 20px;
+     }*/
+
+     h1 {
+        background-color: rgba(0,0,0,.5);
+        color: #E8D0A9;
+        text-shadow: 1px 1px 2px #666;
+        padding: 0.5em;
+        padding-left: 3.8em;
      }
 
      .container {
         width: 1024px;
      }
 
-     .nav-tabs {
-        background-color: #8FBCDB;
+     .tabs-left > .nav-tabs > li > a {
+        outline: 0;
+     }
+     .tabs-left > .nav-tabs {
+        background-color: #AF6633;
         margin-bottom: 0;
+        border-right: 1px solid #E8D0A9;
+     }
+     .tabs-left > .nav-tabs > li.active > a {
+        background-color: #E8D0A9;
+        border-color: #E8D0A9;
+     }
+     .tabs-left > .nav-tabs > li > a:hover, .tabs-left > .nav-tabs > li.active > a:hover {
+        background-color: #E8D0A9;
+        border-color: #E8D0A9;
      }
      .nav-header {
-             color: #294052;
+             color: #333;
              font-size: 1.1em;
      }
      .tabbable {
-        background-color: #fff;
+        background-color: #E8D0A9;
         width: 1024px;
      }
      .tab-pane {
@@ -58,7 +81,7 @@
         padding-right: 3em;
      }
      .nav li a {
-        color: #294052;
+        color: #333;
         font-weight: bolder;
      }
     </style>
@@ -73,12 +96,12 @@
 
   <body>
 	 <header class="header">
-     <!--	   <h1>Zdenek M&#283;kyna</h1> -->
+     <h1>Stavebni prace - Zdenek M&#283;kyna</h1>
 	 </header>
 	 <div class="container">
 	   <div class="tabbable tabs-left">
 	     <ul class="nav nav-tabs" style="height: 500px">
-	       <li class="nav-header">Navigace</li>
+                 <!--	       <li class="nav-header">Navigace</li> -->
 	       <li class="active"><a href="#ofirme">O firmě</a></li>
 	       <li><a href="#portfolio">Portfolio slu&#382;eb</a></li>
 	       <li><a href="#partneri">Partneři</a></li>
